@@ -1,0 +1,4 @@
+{
+    "PolicyName": "root",
+    "PolicyDocument": "invalid_json"
+}
