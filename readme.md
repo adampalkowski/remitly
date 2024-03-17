@@ -31,7 +31,9 @@ The `remitly/tests` directory contains unit tests for the method.
 
 To run the tests, you should be in the `remitly` directory and run the following command:
 
-
+```bash
+python -m unittest tests/test_verify_iam_role_policy.py
+```
 
 To run the tests manually, navigate to `remitly/tests/test_verify_iam_role_policy.py` and click the green arrow on the left of `__main__` at the bottom.
 
