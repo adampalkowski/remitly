@@ -67,7 +67,13 @@ class TestJsonValidator(unittest.TestCase):
         with self.assertRaises(ValueError) as error:
             verify_iam_role_policy(json_data)
 
-        self.assertEqual(str(error.exception), "Missing PolicyDocument in JSON data")
+        self.assertEqual(str(error.exception), "Missing required fields: PolicyDocument")
+    def test_missing_policy_name(self):
+        json_data = self.read_json_from_file('test_missing_policy_name.json')
+        with self.assertRaises(ValueError) as error:
+            verify_iam_role_policy(json_data)
+
+        self.assertEqual(str(error.exception), "Missing required fields: PolicyName")
 
     def test_policy_name_exceeding_maximum_length(self):
         json_data = self.read_json_from_file('test_policy_name_exceeding_maximum_length.json')

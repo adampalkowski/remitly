@@ -5,22 +5,25 @@ To run the program, you need to have Python 3.9 installed on your machine. You c
 
 After installing Python, download the repository by running:
 
-
-"git clone https://github.com/adampalkowski/remitly"
-
+```bash
+git clone https://github.com/adampalkowski/remitly
+```
 
 The `remitly/src` directory contains the verifying function `verify_iam_role_policy.py`.
 
 To run the function, you should be in the `remitly` directory and run the following command:
 
-
-`python src/verify_iam_role_policy.py <your_test_file_json>.json`
-
+```bash
+python src/verify_iam_role_policy.py <your_test_file_json>.json
+```
 for example:
+```bash
 `python src/verify_iam_role_policy.py sample_json.json`
+```
 or 
+```bash
 `python src/verify_iam_role_policy.py tests/json_files/test_policy_name_exceeding_maximum_length.json`
-
+```
 
 To run the function manually, navigate to `remitly/src/verify_iam_role_policy.py` and click the green arrow on the left of `__main__` at the bottom.
 
