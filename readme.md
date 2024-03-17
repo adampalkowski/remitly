@@ -1,4 +1,4 @@
-# Instructions for Running the Program and Tests
+# How to run
 
 
 To run the program, you need to have Python 3.9 installed on your machine. You can download it from the [official website](https://www.python.org/downloads/).
