@@ -18,11 +18,11 @@ python src/verify_iam_role_policy.py <your_test_file_json>.json
 ```
 for example:
 ```bash
-`python src/verify_iam_role_policy.py sample_json.json`
+python src/verify_iam_role_policy.py sample_json.json
 ```
 or 
 ```bash
-`python src/verify_iam_role_policy.py tests/json_files/test_policy_name_exceeding_maximum_length.json`
+python src/verify_iam_role_policy.py tests/json_files/test_policy_name_exceeding_maximum_length.json
 ```
 
 To run the function manually, navigate to `remitly/src/verify_iam_role_policy.py` and click the green arrow on the left of `__main__` at the bottom.
